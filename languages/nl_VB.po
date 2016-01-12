@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VolksverhalenFunctions\n"
+"Report-Msgid-Bugs-To: http://github.com/iwemuiser/plugin-DataLinker/issues\n"
+"POT-Creation-Date: 2013-04-12 21:49-0500\n"
+"PO-Revision-Date: 2014-04-07 12:21+0100\n"
+"Last-Translator: Iwe EC Muiser <e.c.muiser@utwente.nl>\n"
+"Language-Team: Dutch (http://www.transifex.net/projects/p/omeka/team/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl_VB\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\\\\n;\n"
+"X-Generator: Poedit 1.6.4\n"
+
+#: VerhalenbankFunctionsPlugin.php:573
+msgid "Folktale Types"
+msgstr "Volksverhaaltypen"
+
+#: VerhalenbankFunctionsPlugin.php:575
+msgid "Narrators"
+msgstr "Vertellers"
+
+#: public_functions.php:309
+msgid "All Items"
+msgstr "Alle Items"
+
+#: VerhalenbankFunctionsPlugin.php:302
+msgid "folktales"
+msgstr "volksverhalen"
+
+#: VerhalenbankFunctionsPlugin.php:573
+msgid "Folktales"
+msgstr "Volksverhalen"
+
+#: VerhalenbankFunctionsPlugin.php:90
+msgid "Modify search"
+msgstr "Zoekopdracht wijzigen"
+
+#: VerhalenbankFunctionsPlugin.php:315
+msgid "Show browse links"
+msgstr "Infolinks weergeven"
+
+#: VerhalenbankFunctionsPlugin.php:316
+msgid "Hide browse links"
+msgstr "Infolinks verbergen"
+
+#: admin_functions.php:22
+msgid "Temporarily no title information"
+msgstr "Tijdelijk geen titel informatie"
+
+#: admin_functions.php:166
+msgid "External link"
+msgstr "Externe link"
+
+#: admin_functions.php:166
+msgid "View full text"
+msgstr "Bekijk volledige tekst"
+
+#: admin_functions.php:26
+msgid "Something went wrong"
+msgstr "Er ging iets fout"
+
+#: admin_functions.php:26
+msgid "Narration Date"
+msgstr "Verteldatum"
+
+#: admin_functions.php:26
+msgid "All folktales"
+msgstr "Alle volksverhalen"
+
+#: admin_functions.php:26
+msgid "All folktale types"
+msgstr "Alle volksverhaaltypen"
+
+#: everywhere
+msgid "word count group"
+msgstr "aantal woorden groep"
+
+

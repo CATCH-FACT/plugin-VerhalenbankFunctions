@@ -1,0 +1,47 @@
+/** Special css file for compacted printing of pages **/
+
+/* Remove unwanted elements */
+#header, #nav, .noprint{
+    display: none;
+}
+
+/* Ensure the content spans the full width */
+#container, #container2, #content{
+    width: 100%; margin: 0; float: none;
+}
+
+/* Change text colour to black (useful for light text on a dark background) */
+.lighttext{
+    color: #000 
+}
+
+
+#content a:link:after, #content a:visited:after {    
+  content: " ("attr(href) ") ";    
+  font-size: 90%;   
+  display: none;
+}
+
+a:link:after, a:visited:after {    
+  content: " ("attr(href) ") ";    
+  font-size: 90%;   
+  display: none;
+}
+
+.slide-toggle, .mobile{
+    display: none;
+}
+
+
+h1, h2, h3, h4{
+    line-height: 100%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}    
+
+.element, .element-text{
+    line-height: 100%;
+    padding-bottom: 0px;
+}
