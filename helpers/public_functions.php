@@ -5,11 +5,12 @@
 *           
 */
 function motif_info_retrieve_popup_jquery($args){
-    $subject_element_number = 52; //motif
-    $search_element = null;
-    $return_element = null;
+    $subject_element_number = 52;           #Subject  
+    $search_element = "Identifier";         #Here, the value of the metadata is looked up in identifier
+    $return_element = "Title";              #The title of the found Item is returned in the HTML code
+    $return_itemset = "Dublin Core";
     $collection = 1;
-    return double_field_info($subject_element_number, $search_element, $return_element, $collection, $args, null, get_option('motiflink'));
+    return double_field_info($subject_element_number, $search_element, $return_element, $collection, $args, $return_itemset, get_option('motiflink'));
 }
 
 /*
@@ -104,6 +105,14 @@ function subject_info_retrieve_popup_jquery($args){
     $collection = 1;                        #collection 1 is used to link to
     return double_field_info($subject_element_number, $search_element, $return_element, $collection, $args);
 }
+
+/*function motif_info_retrieve_popup_jquery($args){
+    $subject_element_number = 52;           #Subject  
+    $search_element = "Identifier";         #Here, the value of the metadata is looked up in identifier
+    $return_element = "Title";              #The title of the found Item is returned in the HTML code
+    $collection = 1;                        #collection 1 is used to link to
+    return double_field_info($subject_element_number, $search_element, $return_element, $collection, $args);
+}*/
 
 /*
 *   returns html code for aditional link information on the public or admin site

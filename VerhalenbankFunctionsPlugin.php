@@ -401,7 +401,7 @@ De inhoud is daarom afgeschermd, en kan alleen worden geraadpleegd op het Meerte
             }
             #TODO: aangeven wanneer dit moet gebeuren zoals hierboven
             if (metadata("item", 'Item Type Name') == "Volksverhaal" || metadata("item", 'Item Type Name') == "Lexicon item" || metadata("item", 'Item Type Name') == "Text Edition"){
-                
+                add_filter(array('Display', 'Item', 'Dublin Core', 'Motif'),                        'motif_info_retrieve_popup_jquery', 7);
                 add_filter(array('Display', 'Item', 'Dublin Core', 'Subject'),                      'subject_info_retrieve_popup_jquery', 7);
                 add_filter(array('Display', 'Item', 'Dublin Core', 'Language'),                     'language_info_retrieve_popup_jquery', 7);
                 add_filter(array('Display', 'Item', 'Dublin Core', 'Type'),                         'type_info_retrieve_popup_jquery', 7);
