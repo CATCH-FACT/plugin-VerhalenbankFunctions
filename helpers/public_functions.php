@@ -223,7 +223,7 @@ function browse_link_in_menu($original_value, $additional_information, $links){
 
 function browse_link_in_toggler($original_value, $additional_information, $links){
     $html = $original_value;
-    $supplemented_value = $original_value . ($additional_information ? " - " . $additional_information : "");
+    $supplemented_value = $original_value . ($additional_information ? " - <i>" . $additional_information . "</i>" : "");
     
     if ($supplemented_value && !preg_match('/<.+>/', $original_value)){
         $allowed = "/[^a-z0-9]/i";
