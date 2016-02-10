@@ -614,10 +614,19 @@ De inhoud is daarom afgeschermd, en kan alleen worden geraadpleegd op het Meerte
     {   
     	$vvcollection = get_record_by_id('Collection', 1);
         $stats[] = array(link_to_items_in_collection(metadata($vvcollection, 'total_items'), $props = array(), $action = 'browse', $collectionObj = $vvcollection), __('Folktales'));
+
     	$pcollection = get_record_by_id('Collection', 4);
         $stats[] = array(link_to_items_in_collection(metadata($pcollection, 'total_items'), $props = array(), $action = 'browse', $collectionObj = $vvcollection), __('Narrators'));
+
+    	$ccollection = get_record_by_id('Collection', 9);
+        $stats[] = array(link_to_items_in_collection(metadata($ccollection, 'total_items'), $props = array(), $action = 'browse', $collectionObj = $ccollection), __('Collectors'));
+
     	$tpcollection = get_record_by_id('Collection', 3);
-        $stats[] = array(link_to_items_in_collection(metadata($tpcollection, 'total_items'), $props = array(), $action = 'browse', $collectionObj = $vvcollection), __('Folktale Types'));
+        $stats[] = array(link_to_items_in_collection(metadata($tpcollection, 'total_items'), $props = array(), $action = 'browse', $collectionObj = $tpcollection), __('Folktale Types'));
+
+    	$mcollection = get_record_by_id('Collection', 10);
+        $stats[] = array(link_to_items_in_collection(metadata($mcollection, 'total_items'), $props = array(), $action = 'browse', $collectionObj = $mcollection), __('Motifs'));
+        
         return $stats;
     }
 
