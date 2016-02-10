@@ -17,14 +17,13 @@ class VerhalenbankFunctionsPlugin extends Omeka_Plugin_AbstractPlugin
 	                            'public_head',
                                 'config_form',
                                 'config',
-#                                'public_items_show_top',
+                                'public_items_show',
                                 'public_items_show_sidebar_top',
 //                                'public_items_show_sidebar_ultimate_top',
                                 'admin_head',
                                 'admin_items_show_sidebar',
                                 'initialize',
                                 'items_browse_sql',
-                                'public_item_show',
                                 'define_acl',);
 	
 	protected $_filters = array('display_elements',
@@ -289,6 +288,13 @@ De inhoud is daarom afgeschermd, en kan alleen worden geraadpleegd op het Meerte
         if ($html){
             print '<div id="item-metadata" class="element">';
             print '<h2>Metadata</h2>';
+            
+            // infolink button for unfolding all metadata click options
+            print "<ul class='slide-toggle'>";
+            print '<li class="up" id="slidetoggle">'.__("Show browse links").'</li>'; #Informatie uitklappen
+            print '<li class="down" id="slidetoggle" style="display:none;">'.__("Hide browse links").'</li>';
+            print "</ul>";
+            
             print $html;
             print "</div>";
         }
@@ -329,12 +335,12 @@ De inhoud is daarom afgeschermd, en kan alleen worden geraadpleegd op het Meerte
         return $html;
     }
     
-    public function hookPublicItemShow($args){
+    public function hookPublicItemsShow($args){
 //    public function hookPublicItemsShowSidebarUltimateTop($args){
         print "<ul class='slide-toggle'>";
         print "<li id=\"google_translate_element\"></li>";
-        print '<li class="up" id="slidetoggle">'.__("Show browse links").'</li>'; #TRANSLATE Informatie uitklappen
-        print '<li class="down" id="slidetoggle" style="display:none;">'.__("Hide browse links").'</li>';
+#        print '<li class="up" id="slidetoggle">'.__("Show browse links").'</li>'; #TRANSLATE Informatie uitklappen
+#        print '<li class="down" id="slidetoggle" style="display:none;">'.__("Hide browse links").'</li>';
         print "</ul>";
         print "<script>
             function googleTranslateElementInit() {
@@ -343,6 +349,7 @@ De inhoud is daarom afgeschermd, en kan alleen worden geraadpleegd op het Meerte
                 }, 'google_translate_element');
             }
             </script><script src=\"http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\"></script>";
+        return "TESTSTRING";
     }
     
     public function filterFileMarkup($html, $args){
