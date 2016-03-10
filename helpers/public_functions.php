@@ -150,7 +150,7 @@ function collector_info_retrieve_popup_jquery($args){
 
 function present_dates_as_language($args){
     $printable = new DateFormatHuman($args);
-    return $printable->formatHuman();
+    return strtolower($printable->formatHuman());
 }
 
 /*
