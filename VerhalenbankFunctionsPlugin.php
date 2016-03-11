@@ -811,7 +811,8 @@ De inhoud is daarom afgeschermd, en kan alleen worden geraadpleegd op het Meerte
 
         $folktale_html .= "<H2>Invoerhulp websites / lijsten</H2><br>";
         $folktale_html .= '<UL STYLE="list-style-type: disc;">';
-        $folktale_html .= "<li><a target='manual' href='http://bookstore.ewi.utwente.nl/docs/Handleiding%20Nieuwe%20Volksverhalenbank%20Versie%202.pdf'><b>Handleiding</b> invoer Nederlandse Volksverhalenbank</a><br>";
+        $folktale_html .= "<li><a target='manual' href='http://bookstore.ewi.utwente.nl/docs/Handleiding%20Nieuwe%20Volksverhalenbank%20Versie%202.pdf'><b>Handleiding</b> Invoer Nederlandse Volksverhalenbank 2014</a><br>";
+        $folktale_html .= "<li><a target='manual' href='http://www.verhalenbank.nl/files/original/6113e3a275ea98a72d17d540e14fe891.pdf'><b>Handleiding</b> Nederlandse Volksverhalenbank Handleiding 2016</a><br>";
         $folktale_html .= "<li><a target='motieven' href='http://www.dinor.demon.nl/Thompson/'>Browse/zoek <b>Thompson motieven boomstructuur</b> (website Dirk Kramer)</a><br>";
         $folktale_html .= "<li><a target='momfer' href='http://www.momfer.ml'>Browse/zoek <b>Thompson motieven thesaurus / lexical search</b> (Momfer van Folgert Karsdorp)</a><br>";
         $folktale_html .= "<li><a target='kloekenummers' href='http://www.meertens.knaw.nl/kloeke/'>Zoek <b>Kloeke nummers</b> (website Meertens)</a><br>";
