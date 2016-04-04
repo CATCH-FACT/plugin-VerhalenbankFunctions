@@ -791,11 +791,18 @@ De inhoud is daarom afgeschermd, en kan alleen worden geraadpleegd op het Meerte
                                 );
         $item_toevoegen = 
         $folktale_html = "";
-        $folktale_html .= "<H1>Volksverhalenbank functies</H1><br>";
-        $folktale_html .= "<a class='small blue advanced-search-link button' href='/admin/items/search'>Geavanceerd zoeken</a>";
-        $folktale_html .= "<a href='/admin/items/add' class='add button small green'>Voeg een item toe</a><br>";
 
-//  http://127.0.0.1/vb2.2.2/admin/visuals/originalmap
+        $advanced_search = url(array('module'=>'solr-search','controller'=>'results', 'action' => 'search-form'), 
+                                'default'
+                                );
+        $very_advanced_search = url(array('module'=>'items','controller'=>'search'), 
+                                'default'
+                                );
+
+        $folktale_html .= "<H1>Volksverhalenbank functies</H1><br>";
+        $folktale_html .= "<a class='small blue advanced-search-link button' href='$advanced_search'>Geavanceerd zoeken</a>";
+        $folktale_html .= "<a class='small blue advanced-search-link button' href='$very_advanced_search'>ZEER Geavanceerd zoeken</a>";
+
         $verhalenkaart_url = url(array('module'=>'visuals','controller'=>'originalmap'), 
                                 'default'
                                 );
